@@ -102,7 +102,7 @@ section:nth-child(1) {
 	height: 95vh;
 	width: 45vw;
 	background-image: url(ui-img/tabla-menu.jpg);
-	//background-color: rgba(199, 123, 36, 0.353)  ;
+	/* //background-color: rgba(199, 123, 36, 0.353)  ; */
 	padding: 20px 20px;
 	font-size: 1.2rem;
 	color: whitesmoke ;

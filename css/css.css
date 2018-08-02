@@ -31,7 +31,7 @@ body {
 			  hsla(52.83, 88.83%, 35.1%, 0.68) 100%
 			);
 	
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	background-size: 100%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -54,6 +54,7 @@ body {
 	left: 0;
 	box-sizing: border-box;
 	background-image: url(ui-img/tabla-menu.jpg);
+	white-space: nowrap;
 	
 	}
 
@@ -66,7 +67,6 @@ body {
 	cursor: pointer ;
 	padding: 10px;
 	color: white;
-	display: inline-block;
 	}
 
 
@@ -97,7 +97,7 @@ body {
 	}
 
 .mainNav {
-	padding: 10px;
+	padding: 1%;
 }
 
 .mainNav ul {
@@ -112,6 +112,7 @@ body {
 	background-color:#fff;
 	color: black;
 }
+	 
 
 
 
@@ -419,7 +420,8 @@ box-sizing: border-box;
 	}
   }
   
-  
+
+
 .boxstart{
 	width:38vw;
 	height:60vh;
@@ -447,11 +449,9 @@ article img{
   article:hover img{
 	  cursor: pointer;
 	border-radius:50%;
-	-webkit-border-radius:50%;
 	box-shadow: 0px 0px 15px 15px #81d688;
    -webkit-box-shadow: 0px 0px 15px 15px #72b33d;
 	transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
 	}
 .mainCarta {
 width: 35vw;
@@ -540,8 +540,41 @@ figure h3 p {
 
 
 
+@media(max-width:651px){
 
 
+		.mainNav ul{
+			 display: flex;
+			 justify-content:flex-start;
+		
+		 }
+
+		 .intro{
+			 width: 100%;
+			 height: 110vh ;
+
+		 }
+		 section:nth-child(2) {
+			 display: none;
+			}
+
+        .boxstart{
+			display: none;
+		}
+ 
+		.mainCarta{
+			display: none;
+		}
+		section:nth-child(3) {
+			display: none;
+		}
+		.galeria{
+			display: none;
+		}
+	}
+ 
+ @media (min-width:680px) and (max-width:1200px){
+		
 
 
 

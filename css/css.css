@@ -293,13 +293,17 @@ body {
 	   }
 	   
 	   .galeria{
-		width: 250px; 
+		width:900px ;
 		height: 400px;
 	   background-color: rgba(16, 17, 17, 0.973)  ;
 	   position: relative;
-	   left:15%;
-	   top: 0;
+	   left:40%; 
+	   top: 40%;
+	   border:2px solid red;
+	   margin: 40px 40px;
 	   justify-content: space-between;
+	   justify-content: center;
+	   transform: translate(-40% , -40%);
 	   -webkit-font-smoothing: antialiased;
 	   -webkit-box-shadow:5px 10px 5px 2px rgba(15, 14, 14, 0.75);
 	   font-size: 1rem;
@@ -361,15 +365,16 @@ body {
 		   
    
    section:nth-child(4) {
-	   height: 60vh;
+	   height: 45vh;
 	   padding: 4%;
    }
 	   
    .footer-columna{
 	width:69vw;
-	height: 55vh;
-   left: 20%;
-   transform:translate(-50% -50%);
+	height: 48vh;
+   left: 40%;
+   top: 40%;
+   transform:translate(-40%,-40%);
    position: relative;
    z-index: -1;
    background-color: rgba(169, 175, 175, 0.747) ;
@@ -405,7 +410,7 @@ body {
 		   margin-left: 5px;
 		   margin-bottom: 15px;
 		   font-family: Arial, Helvetica, sans-serif;
-		   padding: 20px;
+		   padding: 10px;
 		   }
 		
 
@@ -513,38 +518,40 @@ body {
 			min-height: 700px;
 			font-size: .5rem;
 		   }
-	     }		 
+		}	 
 	.boxstart{
 		display: none;
 	}
-
+}
 	.mainCarta{
 		position: fixed;
-		left: 0;
+		left:10px;
 	   }
-
-       /* .galeria{
-	   height:450px;
-	   width: 450px;
-	   } */
-
+	}
+        .galeria{
+	   height:350px;
+	   width: 100px;
+	  display: flex;
+	   justify-content: flex-start;
+	   
+	   } 
+	} 
 	   figure img {
-		   flex-wrap: wrap;
 		   width: 100px;
 		   height: 100px;
-		
 
-	   }
+		 } 
+		 
 
 	   figcaption{
 		   display:none;
 	   }
-
+	}
 	  .contenedor{
 		  width:450;
 		  }
 	  }
-}
+          }
 
 }
 @media(max-width:800px){
@@ -554,7 +561,8 @@ body {
 		}
 	}
 	 .galeria{
-     width: 100%
+	 width:900px;
+	 height: 400px; 
 	 } 
 	
 .contenedor{
@@ -562,7 +570,7 @@ body {
 }
 }
 
-
+}
 
 article img{
     margin: 15px;
@@ -694,5 +702,4 @@ figure h3 p {
 		font-size: 0.5rem;
 		text-align: center;
 		letter-spacing:0.1;
-}
 }

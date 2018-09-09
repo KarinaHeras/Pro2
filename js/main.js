@@ -1,4 +1,4 @@
-var altoHeader = $(".mainHeader").height() ;
+var altoHeader = $(".mainHeader").height()+75 ;
 
 
 
@@ -18,7 +18,9 @@ function irAseccion() {
 	var scrollTopDestino = $seccionDestino.offset().top - altoHeader ;
 		
 	$("html").animate({ scrollTop: scrollTopDestino } , 1000) ;
-	
+
+	$('#menu-btn').prop('checked', false); 
+
 }
 
 
@@ -29,6 +31,8 @@ function irArriba() {
 	$("html").animate({ scrollTop: 0 } , 1000) ;
 	
 }
+
+
 
 
 
